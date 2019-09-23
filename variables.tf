@@ -49,7 +49,6 @@ variable "location" {
 
 variable "admin-password" {
    description = "Enter a password for the database administrator. The password must be between 10-32 characters."
-   sensitive   = true
 }
 
 variable "members-memory-allocation-mb" {
@@ -71,5 +70,4 @@ variable "db-user-name" {
 
 variable "db-user-password" {
    description = "The new database user password. The password must be between 10-32 characters."
-   sensitive   = true
 }
