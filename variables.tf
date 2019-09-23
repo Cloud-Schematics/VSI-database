@@ -24,7 +24,7 @@ variable "flavor" {
 }
 
 variable "resource-group" {
-   description = "Enter the name of the IBM Cloud resource group where you want to provision your database instance. To list available resource groups, run `ibmcloud resource groups`." 
+   description = "Enter the name of the IBM Cloud resource group where you want to provision your database instance. To list available resource groups, run `ibmcloud resource groups`."
 }
 
 variable "resource-instance-name" {
@@ -39,7 +39,7 @@ variable "database-service-name" {
 
 variable "database-service-plan" {
    default = "standard"
-   description = "Enter the Databases for PostgreSQL service plan that you want."   
+   description = "Enter the Databases for PostgreSQL service plan that you want."
 }
 
 variable "location" {
@@ -49,25 +49,27 @@ variable "location" {
 
 variable "admin-password" {
    description = "Enter a password for the database administrator. The password must be between 10-32 characters."
+   sensitive   = true
 }
 
-variable "members-memory-allocation-mb"{
+variable "members-memory-allocation-mb" {
    default = "3072"
    description = "Enter the total amount of memory in megabytes that is shared between the database members within the database."
 }
 
 
-variable "members-disk-allocation-mb"{
+variable "members-disk-allocation-mb" {
    default = "20480"
    description = "Enter the disk size in megabytes for the database that is shared across all database members."
 }
 
 
-variable "db-user-name"{
+variable "db-user-name" {
    default = "user123"
    description = "Enter the user name of a database user that you want to set up. "
 }
 
-variable "db-user-password"{
-  description = "The new database user password. The password must be between 10-32 characters." 
+variable "db-user-password" {
+   description = "The new database user password. The password must be between 10-32 characters."
+   sensitive   = true
 }
