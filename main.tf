@@ -41,5 +41,5 @@ resource "ibm_database" "test_acc" {
 }
 
 output "ICD Postgresql database connection string" {
-  value = "http://${"${ibm_database.test_acc.connectionstrings.0.composed}"}"
+  value = "${"${ibm_database.test_acc.connectionstrings.0.composed}"}"
 }
