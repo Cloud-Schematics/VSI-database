@@ -28,7 +28,7 @@ Before you can apply the template in IBM Cloud, you must have the following perm
 
 When you select the VSI-database template from the IBM Cloud catalog, you must enter the following values before you can apply the template: 
 
-* `iaas_classic_api_key`: Enter the API key to access IBM Cloud classic infrastructure. For more information for how to create an API key and retrieve it, see [Managing classic infrastructure API keys](https://cloud.ibm.com/docs/iam?topic=iam-classic_keys). 
+* `iaas_classic_api_key`: Enter the API key to access IBM Cloud classic infrastructure. For more information on how to create an API key and retrieve it, see [Managing classic infrastructure API keys](https://cloud.ibm.com/docs/iam?topic=iam-classic_keys). 
 * `iaas_classic_username`: Enter the user name to access IBM Cloud classic infrastructure. You can retrieve the user name by following the instructions for retrieving your classic infrastructure API key. 
 * `admin-password`: Enter a password for the database administrator. The password must be between 10-32 characters.
 * `db-user-password`: Enter a password for the database user that you want to set up. The password must be between 10-32 characters.
