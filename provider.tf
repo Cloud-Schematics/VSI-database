@@ -7,16 +7,15 @@ variable "iaas_classic_api_key" {
 }
 
 variable "region" {
-  default = "eu-gb"
+  default     = "eu-gb"
   description = "Enter the IBM Cloud region where you want to deploy your Databases for PostgreSQL service instance. The region must match the value in `location`. To find available regions, run `ibmcloud regions`."
 }
 
-
-
 provider "ibm" {
-  iaas_classic_username = "${var.iaas_classic_username}"
-  iaas_classic_api_key  = "${var.iaas_classic_api_key}"
+  iaas_classic_username = var.iaas_classic_username
+  iaas_classic_api_key  = var.iaas_classic_api_key
   iaas_classic_timeout  = 300
-  ibmcloud_timeout  = 300
-  region             = "${var.region}"
+  ibmcloud_timeout      = 300
+  region                = var.region
 }
+
